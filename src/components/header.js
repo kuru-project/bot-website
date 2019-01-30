@@ -5,8 +5,8 @@ import React from 'react'
 import './header.css'
 
 const Header = ({ siteTitle, botInviteLink }) => (
-  <div>
-    <div>
+  <Header>
+    <div className="container">
       <h1>
         <Link to="/">
           {siteTitle}
@@ -14,7 +14,7 @@ const Header = ({ siteTitle, botInviteLink }) => (
       </h1>
       <a href={botInviteLink} target="_blank">Invite Link</a>
     </div>
-  </div>
+  </Header>
 )
 
 Header.propTypes = {
