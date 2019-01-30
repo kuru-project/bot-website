@@ -2,6 +2,7 @@ module.exports = {
   siteMetadata: {
     title: `Gatsby Default Starter`,
     description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
+    botInviteLink: `https://discordapp.com/oauth2/authorize?&client_id=514252558248706059&scope=bot&permissions=8`,
     author: `@gatsbyjs`,
   },
   plugins: [
