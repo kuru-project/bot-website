@@ -2,6 +2,8 @@ import { Link } from 'gatsby'
 import PropTypes from 'prop-types'
 import React from 'react'
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+
 const Header = ({ siteTitle, botInviteLink, companyName }) => (
   <header style={{ backgroundColor: "#CD3C2A" }} className="mb-5 p-3">
     <div className="container mx-auto flex items-center">
@@ -10,7 +12,7 @@ const Header = ({ siteTitle, botInviteLink, companyName }) => (
           {companyName}
         </Link>
       </h1>
-      <a href={botInviteLink} target="_blank" rel="noopener noreferrer" className="no-underline">Invite Link</a>
+      <a href={botInviteLink} target="_blank" rel="noopener noreferrer" className="no-underline"><FontAwesomeIcon icon="robot" /> Invite Link</a>
     </div>
   </header>
 )

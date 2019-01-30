@@ -1,11 +1,17 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { StaticQuery, graphql } from 'gatsby'
-import '@fortawesome/fontawesome-free'
 
 import Header from './header'
 import './tailwind.css'
 import './layout.css'
+
+import { library } from '@fortawesome/fontawesome-svg-core'
+import {
+  faRobot
+} from '@fortawesome/free-solid-svg-icons'
+
+library.add(faRobot)
 
 const Layout = ({ children }) => (
   <StaticQuery
