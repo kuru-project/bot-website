@@ -7,9 +7,7 @@ import './tailwind.css'
 import './layout.css'
 
 import { library } from '@fortawesome/fontawesome-svg-core'
-import {
-  faRobot
-} from '@fortawesome/free-solid-svg-icons'
+import { faRobot } from '@fortawesome/free-solid-svg-icons'
 
 library.add(faRobot)
 
@@ -36,6 +34,7 @@ const Layout = ({ children }) => (
             padding: `0px 1.0875rem 1.45rem`,
             paddingTop: 0,
           }}
+          className="font-sans"
         >
           {children}
           <footer>
