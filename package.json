@@ -1,9 +1,9 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "Kuru Anime Bot Website",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
+  "description": "A website for Kuru Anime's Bot",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Bos Eriko Reyes <mail@boseriko.com>",
   "dependencies": {
     "gatsby": "^2.0.105",
     "gatsby-image": "^2.0.20",
@@ -16,7 +16,8 @@
     "prop-types": "^15.6.2",
     "react": "^16.6.3",
     "react-dom": "^16.6.3",
-    "react-helmet": "^5.2.0"
+    "react-helmet": "^5.2.0",
+    "tailwindcss": "^0.7.4"
   },
   "keywords": [
     "gatsby"

@@ -2,10 +2,8 @@ import { Link } from 'gatsby'
 import PropTypes from 'prop-types'
 import React from 'react'
 
-import './header.css'
-
 const Header = ({ siteTitle, botInviteLink }) => (
-  <Header>
+  <header>
     <div className="container">
       <h1>
         <Link to="/">
@@ -14,7 +12,7 @@ const Header = ({ siteTitle, botInviteLink }) => (
       </h1>
       <a href={botInviteLink} target="_blank">Invite Link</a>
     </div>
-  </Header>
+  </header>
 )
 
 Header.propTypes = {
