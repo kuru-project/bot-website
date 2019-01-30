@@ -1,6 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { StaticQuery, graphql } from 'gatsby'
+import '@fortawesome/fontawesome-free'
 
 import Header from './header'
 import './tailwind.css'
@@ -13,6 +14,7 @@ const Layout = ({ children }) => (
         site {
           siteMetadata {
             title
+            companyName
             botInviteLink
           }
         }
@@ -20,7 +22,7 @@ const Layout = ({ children }) => (
     `}
     render={data => (
       <>
-        <Header siteTitle={data.site.siteMetadata.title} botInviteLink={data.site.siteMetadata.botInviteLink} />
+        <Header companyName={data.site.siteMetadata.companyName} siteTitle={data.site.siteMetadata.title} botInviteLink={data.site.siteMetadata.botInviteLink} />
         <div
           style={{
             margin: `0 auto`,

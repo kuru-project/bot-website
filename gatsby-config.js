@@ -1,9 +1,10 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
+    title: `Kuru Anime's Discord Bot`,
+    companyName: `Kuru Anime`,
+    description: `A bot that can weeb all day long!`,
     botInviteLink: `https://discordapp.com/oauth2/authorize?&client_id=514252558248706059&scope=bot&permissions=8`,
-    author: `@gatsbyjs`,
+    author: `Bos Eriko Reyes`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
