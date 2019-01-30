@@ -3,14 +3,14 @@ import PropTypes from 'prop-types'
 import React from 'react'
 
 const Header = ({ siteTitle, botInviteLink }) => (
-  <header>
-    <div className="container">
+  <header className="bg-orange-light">
+    <div>
       <h1>
         <Link to="/">
           {siteTitle}
         </Link>
       </h1>
-      <a href={botInviteLink} target="_blank">Invite Link</a>
+      <a href={botInviteLink} target="_blank" rel="noopener noreferrer">Invite Link</a>
     </div>
   </header>
 )

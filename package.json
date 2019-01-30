@@ -1,5 +1,5 @@
 {
-  "name": "Kuru Anime Bot Website",
+  "name": "kuru-anime-bot-website",
   "private": true,
   "description": "A website for Kuru Anime's Bot",
   "version": "0.1.0",
@@ -24,9 +24,10 @@
   ],
   "license": "MIT",
   "scripts": {
-    "build": "gatsby build",
+    "tailwind:css":"tailwind build src/components/tailwind.src.css -c  tailwind.js -o src/components/tailwind.css",
+    "build": "npm run tailwind:css && gatsby build",
     "develop": "gatsby develop",
-    "start": "npm run develop",
+    "start": "npm run tailwind:css && npm run develop",
     "format": "prettier --write \"src/**/*.js\"",
     "test": "echo \"Write tests! -> https://gatsby.app/unit-testing\""
   },
