@@ -2,13 +2,11 @@ import { Link } from 'gatsby'
 import PropTypes from 'prop-types'
 import React from 'react'
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-
-// const NavLink = ({ children }) => {
-//   <a href={`http://${children}.kuru-anime.com/`} target="_blank" rel="noopener noreferrer" className="no-underline text-grey-light hover:text-white font-sans mr-3 text-sm">
-//     {children}
-//   </a>
-// }
+const NavLink = ({ children }) => (
+  <a href={`http://${children}.kuru-anime.com/`} target="_blank" rel="noopener noreferrer" className="no-underline text-grey-light hover:text-white font-sans mr-3 text-sm">
+    {children}
+  </a>
+)
 
 const Header = ({ siteTitle, botInviteLink, companyName }) => (
   <header className="mb-5 p-2 bg-kuru">
@@ -18,11 +16,13 @@ const Header = ({ siteTitle, botInviteLink, companyName }) => (
           {companyName}
         </Link>
       </h1>
-      {/* <nav className="ml-5 mr-auto">
+      <nav className="ml-5 mr-auto">
         <NavLink>Discord</NavLink>
-      </nav> */}
+        <NavLink>Facebook</NavLink>
+        <NavLink>Player.me</NavLink>
+      </nav>
       <a href={botInviteLink} target="_blank" rel="noopener noreferrer" className="no-underline hover:bg-grey-lighter bg-white py-1 px-3 text-sm text-kuru rounded">
-        <FontAwesomeIcon icon="robot" /><span className="ml-2 font-sans">Invite {companyName}</span>
+        <i className="fab fa-500px"></i><span className="ml-2 font-sans">Invite {companyName}</span>
       </a>
     </div>
   </header>
@@ -40,12 +40,12 @@ Header.defaultProps = {
   companyName: ``,
 }
 
-// NavLink.propTypes = {
-//   children: PropTypes.string,
-// }
+NavLink.propTypes = {
+  children: PropTypes.string,
+}
 
-// NavLink.defaultProps = {
-//   children: ``,
-// }
+NavLink.defaultProps = {
+  children: ``,
+}
 
 export default Header

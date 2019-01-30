@@ -6,11 +6,6 @@ import Header from './header'
 import './tailwind.css'
 import './layout.css'
 
-import { library } from '@fortawesome/fontawesome-svg-core'
-import { faRobot } from '@fortawesome/free-solid-svg-icons'
-
-library.add(faRobot)
-
 const Layout = ({ children }) => (
   <StaticQuery
     query={graphql`
