@@ -3,9 +3,9 @@ import PropTypes from 'prop-types'
 import React from 'react'
 
 const Header = ({ siteTitle, botInviteLink }) => (
-  <header className="bg-orange-light">
-    <div>
-      <h1>
+  <header>
+    <div className="container mx-auto flex items-center">
+      <h1 className="m-0 p-0">
         <Link to="/">
           {siteTitle}
         </Link>
