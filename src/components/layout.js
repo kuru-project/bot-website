@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 import { StaticQuery, graphql } from 'gatsby'
 
 import Header from './header'
+import Footer from './footer'
 import './tailwind.css'
 import './layout.css'
 
@@ -27,9 +28,7 @@ const Layout = ({ children }) => (
           botInviteLink={data.site.siteMetadata.botInviteLink}
         />
         <div className="font-sans">{children}</div>
-        <footer>
-          {data.site.siteMetadata.companyName} &copy; {new Date().getFullYear()}
-        </footer>
+        <Footer siteTitle={data.site.siteMetadata.title}/>
       </>
     )}
   />
