@@ -23,7 +23,7 @@ const Header = ({ siteTitle, botInviteLink, companyName }) => (
         <NavLink icon="fab fa-twitter-square">Twitter</NavLink>
       </nav>
       <a href={botInviteLink} target="_blank" rel="noopener noreferrer" className="no-underline hover:bg-grey-lighter bg-white py-1 px-3 text-sm text-kuru rounded">
-        <i className="fas fa-robot"></i><span className="ml-2 font-sans">Invite {companyName}</span>
+        <i className="fas fa-robot"></i><span className="ml-2 font-sans">Invite {companyName} bot</span>
       </a>
     </div>
   </header>

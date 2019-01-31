@@ -10,7 +10,7 @@ import './layout.css'
 const Layout = ({ children, className }) => (
   <StaticQuery
     query={graphql`
-      query SiteTitleQuery {
+      query LayoutQuery {
         site {
           siteMetadata {
             title
@@ -21,7 +21,7 @@ const Layout = ({ children, className }) => (
       }
     `}
     render={data => (
-      <>
+      <div className="bg-grey-lighter">
         <Header
           companyName={data.site.siteMetadata.companyName}
           siteTitle={data.site.siteMetadata.title}
@@ -29,7 +29,7 @@ const Layout = ({ children, className }) => (
         />
         <div className={`${className} font-sans`}>{children}</div>
         <Footer siteTitle={data.site.siteMetadata.title}/>
-      </>
+      </div>
     )}
   />
 )
