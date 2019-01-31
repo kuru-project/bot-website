@@ -5,6 +5,8 @@ import { StaticQuery, graphql } from 'gatsby'
 import Layout from '../components/layout'
 import SEO from '../components/seo'
 
+import scopedStyles from './css/index.module.css'
+
 const IndexPage = () => (
   <StaticQuery
     query={graphql`
@@ -19,8 +21,8 @@ const IndexPage = () => (
     render={data => (
       <Layout>
         <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
-        <div className="text-center mb-5 sm:p-14 md:p-20 lg:p-26 xl:p-32">
-          <div className="">
+        <div className={`text-center text-white mb-5 ${scopedStyles.mainBlock}`}>
+          <div className={`sm:p-14 md:p-20 lg:p-26 xl:p-32 ${scopedStyles.filter}`}>
             <h1 className="p-0 pb-3 m-0 font-roboto-condensed">{data.site.siteMetadata.companyName} Bot</h1>
             <p className="p-0 pb-3 m-0">An all purpose bot for Discord servers!</p>
             <div>

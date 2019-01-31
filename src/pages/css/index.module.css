@@ -1,0 +1,8 @@
+.mainBlock {
+    background-image: url("../../images/pages/index/main-block.png");
+    background-position: center;
+    background-size: cover;
+}
+.filter {
+    background-color: rgba(0,0,0,.5);
+}
