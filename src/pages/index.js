@@ -20,12 +20,12 @@ const IndexPage = () => (
       <Layout>
         <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
         <div className="text-center mb-5 sm:p-14 md:p-20 lg:p-26 xl:p-32">
-          <div>
-            <h1 className="p-0 pb-3 m-0 font-roboto-condensed">Kuru Anime Bot</h1>
+          <div className="">
+            <h1 className="p-0 pb-3 m-0 font-roboto-condensed">{data.site.siteMetadata.companyName} Bot</h1>
             <p className="p-0 pb-3 m-0">An all purpose bot for Discord servers!</p>
             <div>
-              <a href="http://google.com" target="_blank" className="inline-block m-3 no-underline hover:bg-grey-lighter bg-white p-3 text-sm text-kuru rounded"><i className="fas fa-robot"></i><span className="ml-2">Invite {data.site.siteMetadata.companyName} Bot</span></a>
-              <a href="http://google.com" target="_blank" className="inline-block m-3 no-underline hover:bg-grey-lighter bg-white p-3 text-sm text-kuru rounded"><i className="fas fa-robot"></i><span className="ml-2">Join our Discord</span></a>
+              <a href={`https://discordapp.com/oauth2/authorize?&client_id=514252558248706059&scope=bot&permissions=8`} target="_blank" rel="noopener noreferrer" className="inline-block m-3 no-underline hover:bg-grey-lighter bg-white p-3 text-sm text-kuru rounded"><i className="fas fa-robot"></i><span className="ml-2">Invite Bot</span></a>
+              <a href="http://discord.kuru-anime.com/" target="_blank" rel="noopener noreferrer" className="inline-block m-3 no-underline hover:bg-grey-lighter bg-white p-3 text-sm text-kuru rounded"><i className="fab fa-discord"></i><span className="ml-2">Join our Discord</span></a>
             </div>
           </div>
         </div>
