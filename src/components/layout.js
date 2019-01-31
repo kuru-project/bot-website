@@ -7,7 +7,7 @@ import Footer from './footer'
 import './tailwind.css'
 import './layout.css'
 
-const Layout = ({ children }) => (
+const Layout = ({ children, className }) => (
   <StaticQuery
     query={graphql`
       query SiteTitleQuery {
@@ -27,7 +27,7 @@ const Layout = ({ children }) => (
           siteTitle={data.site.siteMetadata.title}
           botInviteLink={data.site.siteMetadata.botInviteLink}
         />
-        <div className="font-sans">{children}</div>
+        <div className={`${className} font-sans`}>{children}</div>
         <Footer siteTitle={data.site.siteMetadata.title}/>
       </>
     )}
@@ -36,6 +36,7 @@ const Layout = ({ children }) => (
 
 Layout.propTypes = {
   children: PropTypes.node.isRequired,
+  className: PropTypes.string,
 }
 
 export default Layout
