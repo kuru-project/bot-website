@@ -2,9 +2,10 @@ import { Link } from 'gatsby'
 import PropTypes from 'prop-types'
 import React from 'react'
 
-const NavLink = ({ children }) => (
-  <a href={`http://${children}.kuru-anime.com/`} target="_blank" rel="noopener noreferrer" className="no-underline text-grey-light hover:text-white font-sans mr-3 text-sm">
-    {children}
+const NavLink = ({ children, icon }) => (
+  <a href={`http://${children}.kuru-anime.com/`} title={children} target="_blank" rel="noopener noreferrer" className="no-underline hover:text-grey-light text-white font-sans mr-3 text-sm">
+    <i className={icon}></i>
+    <span className="hidden">{children}</span>
   </a>
 )
 
@@ -17,12 +18,12 @@ const Header = ({ siteTitle, botInviteLink, companyName }) => (
         </Link>
       </h1>
       <nav className="ml-5 mr-auto">
-        <NavLink>Discord</NavLink>
-        <NavLink>Facebook</NavLink>
-        <NavLink>Player.me</NavLink>
+        <NavLink icon="fab fa-discord">Discord</NavLink>
+        <NavLink icon="fab fa-facebook-square">Facebook</NavLink>
+        <NavLink icon="fab fa-twitter-square">Twitter</NavLink>
       </nav>
       <a href={botInviteLink} target="_blank" rel="noopener noreferrer" className="no-underline hover:bg-grey-lighter bg-white py-1 px-3 text-sm text-kuru rounded">
-        <i className="fab fa-500px"></i><span className="ml-2 font-sans">Invite {companyName}</span>
+        <i className="fas fa-robot"></i><span className="ml-2 font-sans">Invite {companyName}</span>
       </a>
     </div>
   </header>
@@ -42,10 +43,12 @@ Header.defaultProps = {
 
 NavLink.propTypes = {
   children: PropTypes.string,
+  icon: PropTypes.string,
 }
 
 NavLink.defaultProps = {
   children: ``,
+  icon: ``,
 }
 
 export default Header

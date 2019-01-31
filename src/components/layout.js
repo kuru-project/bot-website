@@ -26,7 +26,7 @@ const Layout = ({ children }) => (
           siteTitle={data.site.siteMetadata.title}
           botInviteLink={data.site.siteMetadata.botInviteLink}
         />
-        <div>{children}</div>
+        <div className="font-sans">{children}</div>
         <footer>
           {data.site.siteMetadata.companyName} &copy; {new Date().getFullYear()}
         </footer>
