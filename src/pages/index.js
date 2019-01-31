@@ -27,7 +27,7 @@ const IndexPage = () => (
             <p className="p-0 pb-3 m-0">An all purpose bot for Discord servers!</p>
             <div>
               <a href={`https://discordapp.com/oauth2/authorize?&client_id=514252558248706059&scope=bot&permissions=8`} target="_blank" rel="noopener noreferrer" className="inline-block m-3 no-underline hover:bg-grey-lighter bg-white p-3 text-sm text-kuru rounded"><i className="fas fa-robot"></i><span className="ml-2">Invite Bot</span></a>
-              <a href="http://discord.kuru-anime.com/" target="_blank" rel="noopener noreferrer" className="inline-block m-3 no-underline hover:bg-grey-lighter bg-white p-3 text-sm text-kuru rounded"><i className="fab fa-discord"></i><span className="ml-2">Join our Discord</span></a>
+              <a href="http://discord.kuru-anime.com/" target="_blank" rel="noopener noreferrer" className="inline-block m-3 no-underline hover:bg-grey-lighter bg-white p-3 text-sm text-kuru rounded"><i className="fab fa-discord"></i><span className="ml-2">Join Server</span></a>
             </div>
           </div>
         </div>
