@@ -3,7 +3,7 @@ import React from 'react'
 
 const Footer = ({ siteTitle }) => (
   <footer className="bg-grey-darkest font-sans">
-    <div className="container mx-auto text-center p-5 text-white text-sm">
+    <div className="container mx-auto text-center p-5 text-white text-xs">
       {siteTitle} &copy; {new Date().getFullYear()}
     </div>
   </footer>
