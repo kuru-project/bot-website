@@ -129,6 +129,7 @@ let colors = {
   'pink-lightest': '#ffebef',
 
   'kuru': '#CD3C2A',
+  'kuru-dark': '#982618',
 }
 
 module.exports = {

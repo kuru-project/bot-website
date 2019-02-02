@@ -10,7 +10,7 @@ const NavLink = ({ children, icon }) => (
 )
 
 const Header = ({ siteTitle, botInviteLink, companyName }) => (
-  <header className="p-2 bg-kuru">
+  <header className="p-2 bg-kuru border-b border-kuru-dark">
     <div className="container mx-auto flex items-center">
       <h1 className="m-0 p-0 font-roboto-condensed text-2xl">
         <Link to="/" className="no-underline text-white" title={siteTitle}>
