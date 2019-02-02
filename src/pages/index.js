@@ -7,6 +7,8 @@ import SEO from '../components/seo'
 
 import scopedStyles from './css/index.module.css'
 
+const youtubeVideoID = "xKKFb8i5ECw";
+
 const IndexPage = () => (
   <StaticQuery
     query={graphql`
@@ -22,6 +24,9 @@ const IndexPage = () => (
       <Layout>
         <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
         <div className={`text-center text-white mb-5 ${scopedStyles.mainBlock}`}>
+          <div className={scopedStyles.videoBackground}>
+            <iframe width="560" height="315" src={`https://www.youtube.com/embed/${youtubeVideoID}?autoplay=1&mute=1&modestbranding=1&autohide=1&showinfo=0&controls=0`} frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen title="videoBackground"></iframe>
+          </div>
           <div className={`sm:p-14 md:p-20 lg:p-26 xl:p-32 ${scopedStyles.filter}`}>
             <h1 className="p-0 pb-3 m-0 font-roboto-condensed">{data.site.siteMetadata.companyName} Bot</h1>
             <p className="p-0 pb-3 m-0">An all purpose bot for Discord servers!</p>
