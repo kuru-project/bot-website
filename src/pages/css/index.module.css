@@ -1,27 +1,10 @@
 .mainBlock {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     overflow: hidden;
     position: relative;
-}
-.videoBackground {
-    height: 100%;
-    left: 0;
-    overflow: hidden;
-    position: absolute;
-    top: 0;
-    width: 100%;
-    z-index: 1;
-}
-.videoBackground iframe {
-    height: auto;
-    left: -50%;
-    min-height: 100%;
-    min-width: 100%;
-    overflow: hidden;
-    position: absolute;
-    top: -50%;
-    -webkit-transform: translateX(50%) translateY(50%);
-    transform: translateX(50%) translateY(50%);
-    width: auto;
+    background-image: url('../../images/pages/index/main-block.gif');
 }
 .filter {
     background-color: rgba(0,0,0,.5);
