@@ -11,11 +11,11 @@ import scopedStyles from './css/index.module.css'
 const BoxDescription = ({ icon, title, description }) => (
   <div className="flex-1 mx-5 p-3 rounded shadow bg-white text-black flex">
     <div className="text-center text-5xl text-grey-darker pr-3">
-      <i className="fas fa-language"></i>
+      <i className={icon}></i>
     </div>
     <div className="flex-1">
-      <h5 className="m-0 p-0 pb-1 font-bold text-lg font-roboto-condensed text-kuru">Natural Language Processing</h5>
-      <p className="m-0 p-0 text-xs">You can talk to the bot through DMs and it will reply to you. Our bot uses Natural Language Processing (with the help of Dialogflow) so you can type normal English sentences and the bot will understand most of the time!</p>
+      <h5 className="m-0 p-0 pb-1 font-bold text-lg font-roboto-condensed text-kuru">{title}</h5>
+      <p className="m-0 p-0 text-xs">{description}</p>
       <Link to="/page-2/"></Link>
     </div>
   </div>
@@ -47,9 +47,9 @@ const IndexPage = () => (
         </div>
         <div className="container mx-auto mb-5">
           <div className="flex">
-            <BoxDescription />
-            <BoxDescription />
-            <BoxDescription />
+            <BoxDescription icon="fas fa-language" title="Natural Language Processing" description="You can bully to the bot through DMs and it will reply to you. Our bot uses Natural Language Processing (with the help of Dialogflow) so you can type normal English sentences and the bot will understand most of the time!" />
+            <BoxDescription icon="fas fa-chess-knight" title="Fun Utilities" description="This bot has plenty of useless features that you'll use one time and never again! Features like 8ball, Rock-Paper-Scissors, Flip a Coin and most of the stuff that you can already find in other bots are also here! Neat, huh?" />
+            <BoxDescription icon="fas fa-clipboard-list" title="Anime List inside Discord!" description="So you have your own Anime List and you also have your own Discord. To flex your Anime List to your Discord friend you'll be sharing the link to the chat but that's annoying! So why not have your own list inside Discord itself?!" />
           </div>
         </div>
       </Layout>
