@@ -18,6 +18,7 @@ const Header = ({ siteTitle, botInviteLink, companyName }) => (
         </Link>
       </h1>
       <nav className="ml-5 mr-auto">
+        <NavLink icon="fas fa-book">Docs</NavLink>
         <NavLink icon="fab fa-discord">Discord</NavLink>
         <NavLink icon="fab fa-facebook-square">Facebook</NavLink>
         <NavLink icon="fab fa-twitter-square">Twitter</NavLink>
