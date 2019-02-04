@@ -18,11 +18,13 @@ const Header = ({ siteTitle, botInviteLink, companyName }) => (
         </Link>
       </h1>
       <nav className="ml-5 mr-auto">
-        <NavLink icon="fas fa-book">Docs</NavLink>
         <NavLink icon="fab fa-discord">Discord</NavLink>
         <NavLink icon="fab fa-facebook-square">Facebook</NavLink>
         <NavLink icon="fab fa-twitter-square">Twitter</NavLink>
       </nav>
+      <a href="https://docs.kuru-anime.com/" target="_blank" rel="noopener noreferrer" className="no-underline hover:bg-grey-lighter bg-white py-1 px-3 text-sm text-kuru rounded shadow mr-3">
+        <i className="fas fa-book"></i><span className="ml-2 font-sans">Documentation</span>
+      </a>
       <a href={botInviteLink} target="_blank" rel="noopener noreferrer" className="no-underline hover:bg-grey-lighter bg-white py-1 px-3 text-sm text-kuru rounded shadow">
         <i className="fas fa-robot"></i><span className="ml-2 font-sans">Invite bot</span>
       </a>
