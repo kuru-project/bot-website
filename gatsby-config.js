@@ -3,7 +3,7 @@ module.exports = {
     title: `Kuru Anime's Discord Bot`,
     companyName: `Kuru Anime`,
     description: `A bot that can weeb all day long!`,
-    botInviteLink: `https://discordapp.com/oauth2/authorize?&client_id=514252558248706059&scope=bot&permissions=8`,
+    botInviteLink: `https://discordapp.com/oauth2/authorize?&client_id=514252558248706059&scope=bot&permissions=2146958839`,
     author: `Bos Eriko Reyes`,
   },
   plugins: [

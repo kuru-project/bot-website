@@ -31,7 +31,8 @@
     "develop": "gatsby develop",
     "start": "npm run tailwind:css && npm run develop",
     "format": "prettier --write \"src/**/*.js\"",
-    "test": "echo \"Write tests! -> https://gatsby.app/unit-testing\""
+    "test": "echo \"Write tests! -> https://gatsby.app/unit-testing\"",
+    "deploy": "git add . && git wtf && git push origin master && heroku logs --tail"
   },
   "devDependencies": {
     "prettier": "^1.15.2"
